@@ -1,5 +1,6 @@
 package br.com.alura.comex;
 
+import br.com.alura.comex.cliente.Pedido;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
