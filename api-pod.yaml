@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: apirest
+  labels:
+    app: api-pod
+spec:
+  containers:
+    - name: apirest
+      image: fabiano1979/apirest:1.1
+      # image: springapi
+      # imagePullPolicy: Never
+      ports:
+        - containerPort: 8080
+      env:
+        - name: MYSQL_HOST
+          value: "svc-bd"
+        - name: MYSQL_DATABASE
+          value: "farmacia_semana9"
